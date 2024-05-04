@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Borcelle - Store Auth",
-  description: "Next.js 14 Brocelle E-commerce store",
+  description: "Next.js 14 Borcelle Ecommerce store",
 };
 
 export default function RootLayout({
@@ -18,7 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <ClerkProvider>
-      <html lang="en">
+      <html lang="en" suppressHydrationWarning={true}>
         <body className={inter.className}>{children}</body>
       </html>
     </ClerkProvider>
