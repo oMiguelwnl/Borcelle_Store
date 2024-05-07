@@ -1,4 +1,4 @@
-import { getProducts } from "@/lib/actions";
+import { getProducts } from "@/lib/actions/actions";
 import ProductCard from "./ProductCard";
 
 const ProductList = async () => {
