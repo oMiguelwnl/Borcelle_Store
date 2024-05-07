@@ -6,9 +6,11 @@ import Link from "next/link";
 
 import { UserButton, useUser } from "@clerk/nextjs";
 import { useState } from "react";
+import useCart from "@/lib/hooks/useCart";
 
 const NavBar = () => {
   const { user } = useUser();
+  const cart = useCart();
 
   const [dropdownMenu, setDropdownMenu] = useState(false);
 
@@ -28,7 +30,7 @@ const NavBar = () => {
           className="flex items-center gap-3 border rounded-lg px-2 py-1 hover:bg-black hover:text-white"
         >
           <ShoppingCart />
-          <p className="text-base-bold">Cart (0)</p>
+          <p className="text-base-bold">Cart ({cart.cartItems.length})</p>
         </Link>
 
         {user && (
