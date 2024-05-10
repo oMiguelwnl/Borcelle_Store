@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import Image from "next/image";
 import React, { useState } from "react";
@@ -23,7 +23,9 @@ const Gallery = ({ productMedia }: { productMedia: string[] }) => {
             height={200}
             width={200}
             alt="product"
-            className={`w-20 h-20 rounded-lg object-cover cursor-pointer ${mainImage === image ? "border-2 border-black" : ""}`}
+            className={`w-20 h-20 rounded-lg object-cover cursor-pointer ${
+              mainImage === image ? "border-2 border-black" : ""
+            }`}
             onClick={() => setMainImage(image)}
           />
         ))}

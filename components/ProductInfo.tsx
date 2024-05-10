@@ -99,7 +99,7 @@ const ProductInfo = ({ productInfo }: { productInfo: ProductType }) => {
           });
         }}
       >
-        Add to cart
+        Add To Cart
       </button>
     </div>
   );
