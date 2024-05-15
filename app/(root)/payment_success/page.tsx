@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import useCart from "@/lib/hooks/useCart";
 import Link from "next/link";
